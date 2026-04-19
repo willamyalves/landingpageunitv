@@ -1,0 +1,164 @@
+📺 FAQ Completa — UniTV e IPTV
+Este documento reúne as informações fixas do serviço, válidas para todos os clientes.
+
+📱 UniTV — Perguntas Frequentes
+O que é o UniTV?
+O UniTV é um aplicativo de entretenimento que oferece acesso a canais ao vivo, filmes e séries através da internet.
+O acesso é feito através de credenciais (conta e senha) que você insere diretamente no aplicativo.
+Esse formato de acesso é o que nos permite oferecer um dos melhores preços do mercado, mantendo um serviço completo e suporte sempre que precisar.
+📺 O conteúdo inclui canais, filmes e séries com ótima qualidade de transmissão.
+
+💰 Planos e valores (UniTV)
+1 mês: R$25
+3 meses: R$70
+6 meses: R$130
+12 meses: R$240
+✅ Acesso completo a canais, filmes e séries
+✅ 2 telas simultâneas
+✅ Sem fidelidade
+✅ Suporte quando precisar
+
+📺 Conteúdo disponível no UniTV
+No UniTV você encontra:
+Canais abertos
+Canais fechados
+Filmes sob demanda
+Séries
+Canais esportivos
+Conteúdo infantil
+Documentários
+Conteúdo adulto (18+) com controle parental
+🔄 O catálogo é atualizado regularmente.
+⚠️ Alguns canais podem variar ou ser removidos conforme a disponibilidade da fonte.
+
+📱 Onde o UniTV funciona
+O UniTV funciona em:
+TV Box Android
+Android TV
+Smart TVs com Android (TCL, Philips, Sony etc.)
+Celulares Android
+Fire TV
+Fire TV Stick
+⚠️ O UniTV não funciona em iPhone (iOS).
+⚠️ Também não funciona em Smart TVs sem Android, como:
+LG
+Samsung
+Nestes casos, recomenda-se utilizar IPTV ou um TV Box Android.
+
+👥 Telas simultâneas (UniTV)
+O funcionamento das telas é assim:
+🔹 Plano UniTV — Ideal para dispositivos Android.
+Permite 2 telas simultâneas por conta.
+Exemplos:
+TV + celular
+Duas TVs Android
+TV + TV Box
+Cada conta é fixa para 2 telas.
+Se quiser usar em mais dispositivos ao mesmo tempo, é necessário ativar mais um plano, passando a ter:
+4 telas (2 planos)
+6 telas (3 planos)
+e assim por diante.
+
+🧪 Teste gratuito
+Disponibilizamos teste gratuito de 1 dia (24 horas) para você conhecer o serviço.
+O teste possui:
+Mesmo conteúdo do plano pago
+Mesma qualidade de transmissão
+Ele serve apenas para avaliar o funcionamento no seu aparelho e na sua internet.
+
+📡 Qualidade e internet recomendada
+Os canais são transmitidos em:
+HD
+Full HD
+A qualidade depende principalmente da sua internet.
+Recomendado:
+📶 Mínimo de 15 Mbps
+📶 Wi-Fi estável ou cabo de rede
+Se ocorrer travamento:
+Reinicie modem e aparelho
+Teste outra rede
+Entre em contato com o suporte
+Algumas vezes pode ocorrer instabilidade momentânea no servidor, mas normalmente normaliza rapidamente.
+👉 Também recomendamos testar em outra rede (4G ou outro Wi-Fi) para verificar se melhora.
+
+📲 Como instalar o UniTV (TV Box / Android TV)
+1️⃣ Abra a Play Store do aparelho
+2️⃣ Baixe o aplicativo Downloader
+3️⃣ Abra o Downloader
+4️⃣ Digite o código:
+7157350
+5️⃣ Baixe e instale o UniTV Oficial TV
+6️⃣ Abra o aplicativo
+7️⃣ Entre com conta e senha
+
+🔥 Como instalar no Fire TV Stick
+1️⃣ Vá em Configurações → Minha Fire TV → Sobre
+2️⃣ Selecione Fire TV Stick e aperte OK 7 vezes
+3️⃣ Volte e abra Opções do desenvolvedor
+Depois:
+Entre em Instalar apps desconhecidos
+Ative Downloader
+Agora:
+Vá em Configurações → Aplicativos → Gerenciar aplicativos
+Abra Downloader
+Vá em Permissões
+Ative Armazenamento
+Depois disso:
+Abra o Downloader
+Digite o link de instalação
+Instale o aplicativo.
+Se preferir, também pode baixar o Silk Browser na loja da Amazon e abrir o link de instalação por ele.
+
+🌐 Web Player
+No computador, funciona apenas através do Web Player:
+https://www.uvweboficial.com/
+Se não conseguir acessar, basta ativar uma VPN. Sugerimos baixar o App Proton VPN (para iPhone) ou o programa Proton VPN no computador.
+
+📦 Funcionamento do serviço
+O processo funciona assim:
+📲 Você escolhe o plano
+💳 Faz o pagamento via PIX, cartão ou boleto
+🔑 Recebe login e senha
+📺 Baixa o aplicativo no aparelho
+🚀 Entra com os dados e começa a usar
+
+⏰ Renovação do plano
+Avisamos antes do vencimento
+Você pode renovar antes sem perder dias
+O acesso é renovado imediatamente após o pagamento
+
+💳 Formas de pagamento
+Aceitamos:
+🔹 PIX
+🔹 Cartão de crédito (até 12x)
+🔹 Boleto
+Após o pagamento confirmado, o acesso é liberado.
+
+⚠️ Sobre aparelhos TV Box
+Alguns modelos muito antigos podem apresentar problemas de desempenho.
+Exemplo:
+O TV Box MXQ possui memória RAM muito baixa e pode:
+fechar o aplicativo sozinho
+travar durante o uso
+O ideal é utilizar aparelhos com 2GB ou 4GB de RAM, que rodam o UniTV com muito mais estabilidade.
+
+📺 Recomendação de aparelho
+Uma excelente opção é o Mi TV Stick 4K, que oferece:
+memória RAM adequada
+desempenho rápido
+instalação simples
+ótima compatibilidade com apps como UniTV
+atualizações frequentes
+Além disso, possui excelente custo-benefício.
+
+⚽ Sobre canais Premiere
+Os canais Premiere funcionam normalmente.
+Porém, é comum que em alguns momentos fiquem sem transmissão.
+Isso acontece porque eles exibem conteúdo apenas quando há:
+jogos ao vivo
+eventos esportivos programados
+Quando não há jogos, o canal pode ficar:
+com tela preta
+exibindo apenas o logotipo
+Isso é completamente normal.
+Assim que houver programação ao vivo, o sinal volta automaticamente.
