@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - UniTV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --color-orange: #FF6B00;
+            --color-red: #FF0000;
+            --color-purple: #8A2BE2;
+            --color-blue: #4169E1;
+            --bg-dark: #050505;
+            --bg-card: #121212;
+            --text-main: #FFFFFF;
+            --text-muted: #A0A0A0;
+            --gradient-logo: linear-gradient(135deg, var(--color-orange), var(--color-red), var(--color-purple), var(--color-blue));
+            --glow-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Background Elements */
+        .bg-glow {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, transparent 70%);
+            filter: blur(80px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: sticky;
+            top: 0;
+            background: rgba(5, 5, 5, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-main {
+            height: 40px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 25px;
+            background: var(--gradient-logo);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+            border: none;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 0, 0, 0.5);
+            filter: brightness(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0 60px;
+            text-align: center;
+            background: radial-gradient(circle at top right, rgba(255, 107, 0, 0.1), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(65, 105, 225, 0.1), transparent 40%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: var(--gradient-logo);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            background: linear-gradient(to bottom, transparent, rgba(255, 0, 0, 0.02), transparent);
+        }
+
+        /* Typography */
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: var(--color-orange);
+            font-weight: 800;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--color-orange);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--color-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: var(--color-orange);
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: var(--color-blue);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-orange);
+        }
+
+        /* Animations */
+        [data-reveal] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        [data-reveal].active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Elements -->
+    <div class="bg-glow" style="top: -10%; right: -10%;"></div>
+    <div class="bg-glow" style="bottom: 10%; left: -10%; background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-content">
+            <img src="unitvlogotipo.png" alt="UniTV Logo" class="logo-main">
+            <a href="https://wa.me/5511948469092?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
+                Falar com Suporte
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Política de Privacidade</h1>
+            <p>Entenda como protegemos seus dados pessoais na UniTV</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 30px;">
+                <strong>Última atualização:</strong> 26 de Junho de 2026
+            </p>
+
+            <div class="toc" data-reveal>
+                <h3>Índice</h3>
+                <ul>
+                    <li><a href="#secao1">1. Coleta e Uso de Informações</a></li>
+                    <li><a href="#secao2">2. Uso de Dados</a></li>
+                    <li><a href="#secao3">3. Transferência de Dados</a></li>
+                    <li><a href="#secao4">4. Divulgação de Dados</a></li>
+                    <li><a href="#secao5">5. Segurança dos Dados</a></li>
+                    <li><a href="#secao6">6. Provedores de Serviço</a></li>
+                    <li><a href="#secao7">7. Links para Outros Sites</a></li>
+                    <li><a href="#secao8">8. Privacidade de Crianças</a></li>
+                    <li><a href="#secao9">9. Alterações a Esta Política</a></li>
+                    <li><a href="#secao10">10. Contato</a></li>
+                </ul>
+            </div>
+
+            <div data-reveal>
+                <p>
+                    A UniTV ("nós", "nosso", "nossa") opera o aplicativo UniTV e o site (<strong>https://www.uvweboficial.com/</strong>). Esta página informa sobre nossas políticas relativas à coleta, uso e divulgação de Dados Pessoais quando você usa nosso Serviço e as escolhas que você tem associadas a esses dados.
+                </p>
+                <p>
+                    Utilizamos seus dados para fornecer e melhorar o Serviço. Ao usar o Serviço, você concorda com a coleta e o uso de informações de acordo com esta política.
+                </p>
+            </div>
+
+            <h2 id="secao1" data-reveal>1. Coleta e Uso de Informações</h2>
+            <div data-reveal>
+                <p>Coletamos diversos tipos de informações para várias finalidades para fornecer e melhorar nosso Serviço para você.</p>
+
+                <h3>Tipos de Dados Coletados</h3>
+
+                <h3 style="font-size: 1.1rem; color: var(--color-orange);">Dados Pessoais</h3>
+                <p>Ao usar nosso Serviço, podemos solicitar que você nos forneça certas informações de identificação pessoal que podem ser usadas para contatá-lo ou identificá-lo. As informações de identificação pessoal podem incluir, mas não se limitam a:</p>
+                <ul>
+                    <li>Endereço de e-mail</li>
+                    <li>Nome e sobrenome</li>
+                    <li>Número de telefone</li>
+                    <li>Endereço, estado, província, CEP, cidade</li>
+                    <li>Dados de Uso</li>
+                </ul>
+
+                <h3 style="font-size: 1.1rem; color: var(--color-orange);">Dados de Uso</h3>
+                <p>Também podemos coletar informações sobre como o Serviço é acessado e usado. Esses Dados de Uso podem incluir informações como o endereço de Protocolo de Internet do seu computador (IP), tipo de navegador, versão do navegador, as páginas do nosso Serviço que você visita, a hora e a data da sua visita, o tempo gasto nessas páginas, identificadores exclusivos de dispositivos e outros dados de diagnóstico.</p>
+
+                <h3 style="font-size: 1.1rem; color: var(--color-orange);">Dados de Rastreamento e Cookies</h3>
+                <p>Usamos cookies e tecnologias de rastreamento semelhantes para rastrear a atividade em nosso Serviço e manter certas informações. Cookies são arquivos com pequena quantidade de dados que podem incluir um identificador exclusivo anônimo.</p>
+                <p>Você pode instruir seu navegador a recusar todos os cookies ou a indicar quando um cookie está sendo enviado. No entanto, se você não aceitar cookies, talvez não consiga usar algumas partes do nosso Serviço.</p>
+            </div>
+
+            <h2 id="secao2" data-reveal>2. Uso de Dados</h2>
+            <div data-reveal>
+                <p>A UniTV usa os dados coletados para diversas finalidades:</p>
+                <ul>
+                    <li>Para fornecer e manter o Serviço</li>
+                    <li>Para notificá-lo sobre alterações em nosso Serviço</li>
+                    <li>Para permitir que você participe de recursos interativos do nosso Serviço</li>
+                    <li>Para fornecer suporte ao cliente</li>
+                    <li>Para coletar análises ou informações valiosas para melhorar nosso Serviço</li>
+                    <li>Para monitorar o uso do nosso Serviço</li>
+                    <li>Para detectar, prevenir e resolver problemas técnicos</li>
+                </ul>
+            </div>
+
+            <h2 id="secao3" data-reveal>3. Transferência de Dados</h2>
+            <div data-reveal>
+                <p>Suas informações, incluindo Dados Pessoais, podem ser transferidas para — e mantidas em — computadores localizados fora do seu estado, província, país ou outra jurisdição governamental onde as leis de proteção de dados podem ser diferentes das da sua jurisdição.</p>
+                <p>A UniTV tomará todas as medidas razoavelmente necessárias para garantir que seus dados sejam tratados com segurança e de acordo com esta Política de Privacidade.</p>
+            </div>
+
+            <h2 id="secao4" data-reveal>4. Divulgação de Dados</h2>
+            <div data-reveal>
+                <h3>Requisitos Legais</h3>
+                <p>A UniTV pode divulgar seus Dados Pessoais de boa fé, acreditando que tal ação é necessária para:</p>
+                <ul>
+                    <li>Cumprir uma obrigação legal</li>
+                    <li>Proteger e defender os direitos ou propriedade da UniTV</li>
+                    <li>Prevenir ou investigar possíveis irregularidades relacionadas ao Serviço</li>
+                    <li>Proteger a segurança pessoal dos usuários do Serviço ou do público</li>
+                    <li>Proteger contra responsabilidade legal</li>
+                </ul>
+            </div>
+
+            <h2 id="secao5" data-reveal>5. Segurança dos Dados</h2>
+            <div data-reveal>
+                <p>A segurança dos seus dados é importante para nós, mas lembre-se que nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro. Embora nos esforcemos para usar meios comercialmente aceitáveis para proteger seus Dados Pessoais, não podemos garantir sua segurança absoluta.</p>
+            </div>
+
+            <h2 id="secao6" data-reveal>6. Provedores de Serviço</h2>
+            <div data-reveal>
+                <p>Podemos empregar empresas e indivíduos terceirizados para facilitar nosso Serviço, para fornecer o Serviço em nosso nome, para realizar serviços relacionados ao Serviço ou para nos ajudar a analisar como nosso Serviço é usado.</p>
+                <p>Esses terceiros têm acesso aos seus Dados Pessoais apenas para realizar essas tarefas em nosso nome e são obrigados a não divulgá-los ou usá-los para qualquer outra finalidade.</p>
+            </div>
+
+            <h2 id="secao7" data-reveal>7. Links para Outros Sites</h2>
+            <div data-reveal>
+                <p>Nosso Serviço pode conter links para outros sites que não são operados por nós. Se você clicar em um link de terceiros, você será direcionado para o site desse terceiro. Aconselhamos vivamente que você revise a Política de Privacidade de cada site que você visita.</p>
+                <p>Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros.</p>
+            </div>
+
+            <h2 id="secao8" data-reveal>8. Privacidade de Crianças</h2>
+            <div data-reveal>
+                <p>Nosso Serviço não se destina a menores de 18 anos. Não coletamos intencionalmente informações de identificação pessoal de ninguém com menos de 18 anos. Se você é pai/mãe ou responsável e sabe que seu filho nos forneceu Dados Pessoais, entre em contato conosco.</p>
+            </div>
+
+            <h2 id="secao9" data-reveal>9. Alterações a Esta Política de Privacidade</h2>
+            <div data-reveal>
+                <p>Podemos atualizar nossa Política de Privacidade de tempos em tempos. Iremos notificá-lo sobre quaisquer alterações, publicando a nova Política de Privacidade nesta página. Aconselhamos que você revise esta Política de Privacidade periodicamente para quaisquer alterações.</p>
+            </div>
+
+            <h2 id="secao10" data-reveal>10. Contato</h2>
+            <div data-reveal>
+                <p>Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco:</p>
+                <ul>
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511948469092" style="color: var(--color-blue); text-decoration: none;">+55 11 94846-9092</a></li>
+                    <li><strong>Web Player:</strong> <a href="https://www.uvweboficial.com/" style="color: var(--color-blue); text-decoration: none;">https://www.uvweboficial.com/</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="unitvlogotipo.png" alt="UniTV Logo" style="height: 40px; margin-bottom: 20px; opacity: 0.5;">
+            <p>&copy; 2024 UniTV Oficial. Todos os direitos reservados.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">Este é um serviço de streaming via internet.</p>
+            <div class="footer-links">
+                <a href="politica-privacidade.html">Política de Privacidade</a>
+                <a href="termos-servico.html">Termos de Serviço</a>
+                <a href="https://wa.me/5511948469092">Suporte</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
