@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniTV - O Melhor do Entretenimento</title>
+    <title>Super TV Go - UniTV e IPTV | Streaming de Canais, Filmes e Séries</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -14,8 +14,10 @@
             --color-red: #FF0000;
             --color-purple: #8A2BE2;
             --color-blue: #4169E1;
+            --color-green: #00FF00;
             --bg-dark: #050505;
             --bg-card: #121212;
+            --bg-card-light: #1a1a1a;
             --text-main: #FFFFFF;
             --text-muted: #A0A0A0;
             --gradient-logo: linear-gradient(135deg, var(--color-orange), var(--color-red), var(--color-purple), var(--color-blue));
@@ -116,6 +118,17 @@
             filter: brightness(1.1);
         }
 
+        .cta-button.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--color-orange);
+            color: var(--color-orange);
+        }
+
+        .cta-button.secondary:hover {
+            background: rgba(255, 107, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
+        }
+
         /* Header/Hero */
         header {
             padding: 20px 0;
@@ -170,6 +183,12 @@
             font-size: 2.5rem;
         }
 
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-top: 15px;
+        }
+
         .grid-benefits {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -213,6 +232,82 @@
             border-radius: 100px;
             font-weight: 600;
             border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Device Selection */
+        .device-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .device-option {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .device-option:hover {
+            border-color: var(--color-orange);
+            background: var(--bg-card-light);
+            transform: translateY(-5px);
+        }
+
+        .device-option h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .device-option p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .device-option i {
+            color: var(--color-orange);
+            margin-bottom: 15px;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            overflow-x: auto;
+            margin: 40px 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: rgba(255, 107, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .comparison-table td {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .check {
+            color: var(--color-green);
+            font-weight: 700;
         }
 
         /* How it works */
@@ -266,6 +361,18 @@
             box-shadow: 0 20px 40px rgba(255, 0, 0, 0.15);
         }
 
+        .price-card.featured .badge {
+            background: var(--color-red);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: inline-block;
+            align-self: center;
+        }
+
         .price-value {
             font-size: 3rem;
             font-weight: 800;
@@ -281,6 +388,7 @@
             list-style: none;
             margin-bottom: 30px;
             text-align: left;
+            flex-grow: 1;
         }
 
         .price-features li {
@@ -292,7 +400,7 @@
         }
 
         .price-features i {
-            color: #00FF00;
+            color: var(--color-green);
             width: 18px;
         }
 
@@ -317,6 +425,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        summary:hover {
+            background: var(--bg-card-light);
         }
 
         summary::after {
@@ -332,6 +445,7 @@
         .faq-content {
             padding: 0 20px 20px;
             color: var(--text-muted);
+            line-height: 1.8;
         }
 
         /* Footer */
@@ -381,6 +495,18 @@
             transform: translateY(0);
         }
 
+        /* Promo Badge */
+        .promo-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-orange), var(--color-red));
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 768px) {
             .price-card.featured {
                 transform: scale(1);
@@ -388,26 +514,36 @@
             section {
                 padding: 60px 0;
             }
+            .device-selector {
+                grid-template-columns: 1fr;
+            }
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px 10px;
+            }
         }
     </style>
 
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4288473641414041');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4288473641414041');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -421,9 +557,9 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
 
     <header>
         <div class="container nav-content">
-            <img src="unitvlogotipo.png" alt="UniTV Logo" class="logo-main">
+            <img src="unitvlogotipo.png" alt="Super TV Go Logo" class="logo-main">
             <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button" style="padding: 10px 25px; font-size: 0.9rem;">
-                Falar com Suporte
+                💬 Falar com Suporte
             </a>
         </div>
     </header>
@@ -431,11 +567,11 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 data-reveal>O Futuro da sua <span class="gradient-text">TV chegou.</span></h1>
-                <p data-reveal>Acesse centenas de canais, milhares de filmes e séries com a melhor qualidade do mercado. Simples, rápido e sem fidelidade.</p>
+                <h1 data-reveal>O Futuro do seu <span class="gradient-text">Entretenimento chegou.</span></h1>
+                <p data-reveal>Centenas de canais, milhares de filmes e séries em HD/4K. Simples, rápido, sem fidelidade e com ativação imediata. 📺✨</p>
                 <div data-reveal>
-                    <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
-                        <i data-lucide="play-circle"></i> QUERO TESTAR GRÁTIS
+                    <a href="#compatibilidade" class="cta-button">
+                        <i data-lucide="play-circle"></i> DESCOBRIR MEU PLANO
                     </a>
                 </div>
             </div>
@@ -445,57 +581,163 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
     <section id="beneficios">
         <div class="container">
             <div class="section-title">
-                <h2 data-reveal>Por que escolher o <span class="gradient-text">UniTV?</span></h2>
+                <h2 data-reveal>Por que escolher a <span class="gradient-text">Super TV Go?</span></h2>
+                <p data-reveal>Somos a melhor opção para streaming de qualidade no Brasil</p>
             </div>
             <div class="grid-benefits">
                 <div class="card" data-reveal>
                     <i data-lucide="tv-2" size="40"></i>
-                    <h3>Canais em HD/4K</h3>
-                    <p>Transmissão estável com a melhor resolução para sua TV ou celular.</p>
+                    <h3>📺 Canais em HD/4K</h3>
+                    <p>Transmissão estável com a melhor resolução para sua TV ou celular. Qualidade garantida sempre.</p>
                 </div>
                 <div class="card" data-reveal>
                     <i data-lucide="users" size="40"></i>
-                    <h3>2 Telas Simultâneas</h3>
-                    <p>Assista em dois dispositivos ao mesmo tempo sem custos adicionais.</p>
+                    <h3>👥 Múltiplas Telas</h3>
+                    <p>UniTV: 2 telas simultâneas. IPTV: 1 tela. Assista onde quiser, quando quiser.</p>
                 </div>
                 <div class="card" data-reveal>
                     <i data-lucide="shield-check" size="40"></i>
-                    <h3>Sem Fidelidade</h3>
-                    <p>Cancele quando quiser. Aqui você é livre para escolher seu plano.</p>
+                    <h3>✅ Sem Fidelidade</h3>
+                    <p>Cancele quando quiser. Aqui você é livre para escolher seu plano, sem compromissos.</p>
                 </div>
                 <div class="card" data-reveal>
                     <i data-lucide="zap" size="40"></i>
-                    <h3>Ativação Imediata</h3>
-                    <p>Pagou, recebeu. Seu acesso é liberado logo após a confirmação.</p>
+                    <h3>⚡ Ativação Imediata</h3>
+                    <p>Pagou, recebeu. Seu acesso é liberado logo após a confirmação do pagamento.</p>
+                </div>
+                <div class="card" data-reveal>
+                    <i data-lucide="credit-card" size="40"></i>
+                    <h3>💳 Múltiplas Formas de Pagamento</h3>
+                    <p>PIX para pagamento instantâneo ou Cartão de Crédito para sua comodidade.</p>
+                </div>
+                <div class="card" data-reveal>
+                    <i data-lucide="gift" size="40"></i>
+                    <h3>🎁 Programa de Indicação</h3>
+                    <p>A cada 3 amigos indicados que contratarem, você ganha +1 mês grátis!</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="compatibilidade">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-reveal>Em qual dispositivo você vai <span class="gradient-text">assistir?</span></h2>
+                <p data-reveal>Escolha o seu e conheça o plano perfeito para você</p>
+            </div>
+            
+            <div class="device-selector">
+                <div class="device-option" data-reveal>
+                    <i data-lucide="box" size="40"></i>
+                    <h3>📦 TV Box & Android TV</h3>
+                    <p>Fire Stick, Mi Stick, TCL, Philco e outras Android TVs</p>
+                    <a href="#planos-unitv" class="cta-button" style="width: 100%;">Ver Planos UniTV</a>
+                </div>
+                <div class="device-option" data-reveal>
+                    <i data-lucide="smartphone" size="40"></i>
+                    <h3>📱 Celular Android</h3>
+                    <p>Leve sua TV no bolso para onde você for</p>
+                    <a href="#planos-unitv" class="cta-button" style="width: 100%;">Ver Planos UniTV</a>
+                </div>
+                <div class="device-option" data-reveal>
+                    <i data-lucide="laptop" size="40"></i>
+                    <h3>💻 Computador/Notebook</h3>
+                    <p>Acesse via Web Player diretamente no seu navegador</p>
+                    <a href="#planos-unitv" class="cta-button" style="width: 100%;">Ver Planos UniTV</a>
+                </div>
+                <div class="device-option" data-reveal>
+                    <i data-lucide="tv" size="40"></i>
+                    <h3>📺 Smart TV (Samsung, LG)</h3>
+                    <p>Para Smart TVs sem Android, use o IPTV</p>
+                    <a href="#planos-iptv" class="cta-button" style="width: 100%;">Ver Planos IPTV</a>
+                </div>
+                <div class="device-option" data-reveal>
+                    <i data-lucide="tv" size="40"></i>
+                    <h3>📺 Roku TV (AOC, Philco)</h3>
+                    <p>Compatível com o plano IPTV</p>
+                    <a href="#planos-iptv" class="cta-button" style="width: 100%;">Ver Planos IPTV</a>
+                </div>
+                <div class="device-option" data-reveal>
+                    <i data-lucide="smartphone" size="40"></i>
+                    <h3>🍎 iPhone</h3>
+                    <p>Compatível com o plano IPTV</p>
+                    <a href="#planos-iptv" class="cta-button" style="width: 100%;">Ver Planos IPTV</a>
+                </div>
+            </div>
+
             <div style="text-align: center; margin-top: 50px;" data-reveal>
-                <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
-                    ASSINAR AGORA
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Não tem certeza? Fale com nosso suporte!</p>
+                <a href="https://wa.me/5511948113638?text=Olá! Tenho dúvidas sobre qual plano escolher. Podem me ajudar?" class="cta-button">
+                    💬 FALAR COM SUPORTE
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="content-showcase">
+    <section id="comparacao">
         <div class="container">
             <div class="section-title">
-                <h2 data-reveal>Conteúdo para <span class="gradient-text">toda a família</span></h2>
-                <p data-reveal>Um catálogo completo e atualizado regularmente para você nunca ficar sem opções.</p>
+                <h2 data-reveal>UniTV vs IPTV: <span class="gradient-text">Qual é o melhor para você?</span></h2>
+                <p data-reveal>Veja a comparação completa e escolha o plano ideal</p>
             </div>
-            <div class="content-tags" data-reveal>
-                <span class="tag">Canais Abertos</span>
-                <span class="tag">Canais Fechados</span>
-                <span class="tag">Filmes (VOD)</span>
-                <span class="tag">Séries</span>
-                <span class="tag">Esportes (Premiere)</span>
-                <span class="tag">Documentários</span>
-                <span class="tag">Conteúdo Adulto (18+)</span>
-            </div>
-            <div style="text-align: center; margin-top: 50px;" data-reveal>
-                <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
-                    VER GRADE COMPLETA
-                </a>
+
+            <div class="comparison-table" data-reveal>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>UniTV 📱</th>
+                            <th>IPTV 📺</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Dispositivos Compatíveis</strong></td>
+                            <td>TV Box, Android TV, Celular Android, Computador</td>
+                            <td>Smart TV (Samsung, LG), Roku TV, iPhone</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Telas Simultâneas</strong></td>
+                            <td class="check">2 telas</td>
+                            <td>1 tela</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aplicativos</strong></td>
+                            <td>Aplicativo Oficial UniTV</td>
+                            <td>Blessed Player, PlaySim, Lazer Play, Assist Plus, Fun Play</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preço Mensal</strong></td>
+                            <td class="check">R$ 25</td>
+                            <td>R$ 20</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preço Trimestral</strong></td>
+                            <td class="check">R$ 70</td>
+                            <td>R$ 50</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preço Semestral</strong></td>
+                            <td class="check">R$ 130</td>
+                            <td>R$ 90</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Preço Anual</strong></td>
+                            <td class="check">R$ 240</td>
+                            <td>R$ 150</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fidelidade</strong></td>
+                            <td class="check">Não</td>
+                            <td class="check">Não</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conteúdo</strong></td>
+                            <td class="check">Canais, Filmes, Séries em HD/4K</td>
+                            <td class="check">Canais, Filmes, Séries em HD/4K</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -504,67 +746,38 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
         <div class="container">
             <div class="section-title">
                 <h2 data-reveal>Como <span class="gradient-text">funciona?</span></h2>
+                <p data-reveal>4 passos simples para começar a aproveitar o melhor do entretenimento</p>
             </div>
             <div class="steps">
                 <div class="step" data-reveal>
-                    <h3>Escolha seu Plano</h3>
-                    <p>Selecione o período que melhor atende sua necessidade.</p>
+                    <h3>1️⃣ Escolha seu Plano</h3>
+                    <p>Selecione o período que melhor atende sua necessidade. Sem compromissos!</p>
                 </div>
                 <div class="step" data-reveal>
-                    <h3>Faça o Pagamento</h3>
-                    <p>Via PIX, Cartão ou Boleto de forma segura.</p>
+                    <h3>2️⃣ Faça o Pagamento</h3>
+                    <p>Via PIX (instantâneo) ou Cartão de Crédito de forma segura.</p>
                 </div>
                 <div class="step" data-reveal>
-                    <h3>Receba seu Acesso</h3>
-                    <p>Enviamos seu login e senha imediatamente.</p>
+                    <h3>3️⃣ Receba seu Acesso</h3>
+                    <p>Enviamos seu login e senha imediatamente após a confirmação.</p>
                 </div>
                 <div class="step" data-reveal>
-                    <h3>Dê o Play</h3>
+                    <h3>4️⃣ Dê o Play! 🎬</h3>
                     <p>Instale o app e comece a maratonar agora mesmo.</p>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 50px;" data-reveal>
-                <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
-                    COMEÇAR AGORA
+                <a href="https://wa.me/5511948113638?text=Olá! Quero começar agora mesmo!" class="cta-button">
+                    ⚡ COMEÇAR AGORA
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="compatibilidade">
+    <section id="planos-unitv">
         <div class="container">
             <div class="section-title">
-                <h2 data-reveal>Assista em <span class="gradient-text">qualquer lugar</span></h2>
-            </div>
-            <div class="grid-benefits">
-                <div class="card" data-reveal>
-                    <i data-lucide="monitor"></i>
-                    <h3>TV Box & Android TV</h3>
-                    <p>A melhor experiência em telas grandes (Mi Stick, Fire Stick, etc).</p>
-                </div>
-                <div class="card" data-reveal>
-                    <i data-lucide="smartphone"></i>
-                    <h3>Celular Android</h3>
-                    <p>Leve sua TV no bolso para onde você for.</p>
-                </div>
-                <div class="card" data-reveal>
-                    <i data-lucide="laptop"></i>
-                    <h3>Computador</h3>
-                    <p>Acesse via Web Player diretamente no seu navegador.</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 50px;" data-reveal>
-                <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
-                    VERIFICAR MEU APARELHO
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="planos">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-reveal>Nossos <span class="gradient-text">Planos</span></h2>
+                <h2 data-reveal>Planos <span class="gradient-text">UniTV</span></h2>
                 <p data-reveal>Escolha a melhor opção para você. Sem taxas escondidas.</p>
             </div>
             <div class="pricing-grid">
@@ -573,45 +786,115 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
                     <div class="price-value">R$ 25<span>/mês</span></div>
                     <ul class="price-features">
                         <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
-                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
                         <li><i data-lucide="check-circle-2"></i> 2 Telas Simultâneas</li>
                         <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
                     </ul>
-                    <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">ASSINAR</a>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano UniTV mensal de R$25." class="cta-button">ASSINAR AGORA</a>
                 </div>
                 <div class="price-card featured" data-reveal>
-                    <div style="background: var(--color-red); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 15px; display: inline-block; align-self: center;">MAIS POPULAR</div>
+                    <div class="badge">⭐ MAIS POPULAR</div>
                     <h3>Trimestral</h3>
                     <div class="price-value">R$ 70<span>/3 meses</span></div>
+                    <p style="color: var(--color-green); margin-bottom: 15px; font-weight: 700;">💰 Economize R$ 5!</p>
                     <ul class="price-features">
                         <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
-                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
                         <li><i data-lucide="check-circle-2"></i> 2 Telas Simultâneas</li>
                         <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
                     </ul>
-                    <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">ASSINAR</a>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano UniTV trimestral de R$70." class="cta-button">ASSINAR AGORA</a>
                 </div>
                 <div class="price-card" data-reveal>
                     <h3>Semestral</h3>
                     <div class="price-value">R$ 130<span>/6 meses</span></div>
+                    <p style="color: var(--color-green); margin-bottom: 15px; font-weight: 700;">💰 Economize R$ 20!</p>
                     <ul class="price-features">
                         <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
-                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
                         <li><i data-lucide="check-circle-2"></i> 2 Telas Simultâneas</li>
                         <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
                     </ul>
-                    <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">ASSINAR</a>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano UniTV semestral de R$130." class="cta-button">ASSINAR AGORA</a>
                 </div>
                 <div class="price-card" data-reveal>
                     <h3>Anual</h3>
                     <div class="price-value">R$ 240<span>/ano</span></div>
+                    <p style="color: var(--color-green); margin-bottom: 15px; font-weight: 700;">💰 Economize R$ 60!</p>
                     <ul class="price-features">
                         <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
-                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
                         <li><i data-lucide="check-circle-2"></i> 2 Telas Simultâneas</li>
                         <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
                     </ul>
-                    <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">ASSINAR</a>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano UniTV anual de R$240." class="cta-button">ASSINAR AGORA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos-iptv">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-reveal>Planos <span class="gradient-text">IPTV</span></h2>
+                <p data-reveal>Para Smart TVs (Samsung, LG) e iPhone. Sem compromissos.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card" data-reveal>
+                    <h3>Mensal</h3>
+                    <div class="price-value">R$ 20<span>/mês</span></div>
+                    <ul class="price-features">
+                        <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
+                        <li><i data-lucide="check-circle-2"></i> 1 Tela Simultânea</li>
+                        <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
+                    </ul>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano IPTV mensal de R$20." class="cta-button">ASSINAR AGORA</a>
+                </div>
+                <div class="price-card featured" data-reveal>
+                    <div class="badge">⭐ MAIS POPULAR</div>
+                    <h3>Trimestral</h3>
+                    <div class="price-value">R$ 50<span>/3 meses</span></div>
+                    <p style="color: var(--color-green); margin-bottom: 15px; font-weight: 700;">💰 Economize R$ 10!</p>
+                    <ul class="price-features">
+                        <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
+                        <li><i data-lucide="check-circle-2"></i> 1 Tela Simultânea</li>
+                        <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
+                    </ul>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano IPTV trimestral de R$50." class="cta-button">ASSINAR AGORA</a>
+                </div>
+                <div class="price-card" data-reveal>
+                    <h3>Semestral</h3>
+                    <div class="price-value">R$ 90<span>/6 meses</span></div>
+                    <p style="color: var(--color-green); margin-bottom: 15px; font-weight: 700;">💰 Economize R$ 30!</p>
+                    <ul class="price-features">
+                        <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
+                        <li><i data-lucide="check-circle-2"></i> 1 Tela Simultânea</li>
+                        <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
+                    </ul>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano IPTV semestral de R$90." class="cta-button">ASSINAR AGORA</a>
+                </div>
+                <div class="price-card" data-reveal>
+                    <h3>Anual</h3>
+                    <div class="price-value">R$ 150<span>/ano</span></div>
+                    <p style="color: var(--color-green); margin-bottom: 15px; font-weight: 700;">💰 Economize R$ 90!</p>
+                    <ul class="price-features">
+                        <li><i data-lucide="check-circle-2"></i> Todos os Canais</li>
+                        <li><i data-lucide="check-circle-2"></i> Filmes e Séries em HD/4K</li>
+                        <li><i data-lucide="check-circle-2"></i> 1 Tela Simultânea</li>
+                        <li><i data-lucide="check-circle-2"></i> Suporte Premium</li>
+                        <li><i data-lucide="check-circle-2"></i> Sem Fidelidade</li>
+                    </ul>
+                    <a href="https://wa.me/5511948113638?text=Olá! Quero contratar o plano IPTV anual de R$150." class="cta-button">ASSINAR AGORA</a>
                 </div>
             </div>
         </div>
@@ -621,36 +904,85 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
         <div class="container">
             <div class="section-title">
                 <h2 data-reveal>Dúvidas <span class="gradient-text">Frequentes</span></h2>
+                <p data-reveal>Temos as respostas que você procura</p>
             </div>
             <div class="faq-container">
                 <details data-reveal>
-                    <summary>O que é o UniTV?</summary>
+                    <summary>🤔 O que é o UniTV e IPTV?</summary>
                     <div class="faq-content">
-                        O UniTV é um aplicativo de entretenimento que oferece acesso a canais ao vivo, filmes e séries através da internet via credenciais (conta e senha).
+                        <strong>UniTV:</strong> Aplicativo oficial para dispositivos Android (TV Box, Android TV, Celular, Computador). Oferece 2 telas simultâneas e interface moderna.<br><br>
+                        <strong>IPTV:</strong> Solução para Smart TVs sem Android (Samsung, LG) e iPhone. Funciona através de aplicativos compatíveis com 1 tela simultânea.
                     </div>
                 </details>
                 <details data-reveal>
-                    <summary>Funciona em quais aparelhos?</summary>
+                    <summary>📱 Funciona em quais aparelhos?</summary>
                     <div class="faq-content">
-                        Funciona em TV Box Android, Android TV, Smart TVs com Android (TCL, Philips, Sony), Celulares Android e Fire TV Stick. Não funciona em iPhone ou TVs LG/Samsung sem Android.
+                        <strong>UniTV:</strong> TV Box, Android TV, Smart TVs com Android (TCL, Philips, Sony), Celulares Android, Fire TV Stick, Computadores e Notebooks.<br><br>
+                        <strong>IPTV:</strong> Smart TVs (Samsung, LG), Roku TV (AOC, Philco), iPhone e dispositivos compatíveis com os aplicativos suportados.
                     </div>
                 </details>
                 <details data-reveal>
-                    <summary>Quantas telas posso usar?</summary>
+                    <summary>📺 Quantas telas posso usar?</summary>
                     <div class="faq-content">
-                        Cada conta permite o uso em até 2 telas simultâneas (ex: TV + Celular). Para mais telas, é necessário adquirir planos adicionais.
+                        <strong>UniTV:</strong> Cada conta permite o uso em até 2 telas simultâneas (ex: TV + Celular). Para mais telas, é necessário adquirir planos adicionais.<br><br>
+                        <strong>IPTV:</strong> Cada acesso corresponde a 1 tela. Se precisar de 2 telas, contrate 2 acessos (R$ 40/mês no plano mensal, por exemplo).
                     </div>
                 </details>
                 <details data-reveal>
-                    <summary>Qual a internet recomendada?</summary>
+                    <summary>💳 Quais são as formas de pagamento?</summary>
                     <div class="faq-content">
-                        Recomendamos no mínimo 15 Mbps de velocidade estável via Wi-Fi ou cabo de rede para transmissões em HD e Full HD.
+                        Temos duas formas de pagamento disponíveis:<br><br>
+                        <strong>🔸 PIX:</strong> Pagamento instantâneo e liberação rápida após a confirmação.<br><br>
+                        <strong>🔸 Cartão de Crédito:</strong> Pagamento de forma prática e segura através do link de cobrança.
+                    </div>
+                </details>
+                <details data-reveal>
+                    <summary>🎁 Como funciona o programa de indicação?</summary>
+                    <div class="faq-content">
+                        Gostou do serviço? Então aproveite para ganhar acesso grátis!<br><br>
+                        A cada 3 pessoas que você indicar e que contratarem um plano conosco, você ganha +1 mês grátis no seu acesso.<br><br>
+                        ✅ 3 indicações = 1 mês grátis<br>
+                        ✅ 6 indicações = 2 meses grátis<br>
+                        ✅ 9 indicações = 3 meses grátis<br><br>
+                        É só pedir para a pessoa informar que foi indicada por você no momento da contratação!
+                    </div>
+                </details>
+                <details data-reveal>
+                    <summary>🔑 Funciona com código de 16 dígitos?</summary>
+                    <div class="faq-content">
+                        Também trabalhamos com código, mas indicamos usar uma nova conta e senha, pois você tem alguns benefícios:<br><br>
+                        1. Mais comodidade ao renovar (renovação automática na mesma conta)<br>
+                        2. Receba lembretes automáticos alguns dias com antecedência quando sua conta está prestes a expirar
+                    </div>
+                </details>
+                <details data-reveal>
+                    <summary>📡 Qual a internet recomendada?</summary>
+                    <div class="faq-content">
+                        Recomendamos no mínimo 15 Mbps de velocidade estável via Wi-Fi ou cabo de rede para transmissões em HD e Full HD. Para 4K, recomendamos 25 Mbps ou superior.
+                    </div>
+                </details>
+                <details data-reveal>
+                    <summary>🔄 Posso cancelar minha assinatura?</summary>
+                    <div class="faq-content">
+                        Sim! Não temos fidelidade. Você pode cancelar sua assinatura a qualquer momento, sem custos adicionais. Basta entrar em contato com nosso suporte via WhatsApp.
+                    </div>
+                </details>
+                <details data-reveal>
+                    <summary>🎬 Quais aplicativos são compatíveis com IPTV?</summary>
+                    <div class="faq-content">
+                        Os aplicativos compatíveis com o IPTV são:<br><br>
+                        🔹 Blessed Player<br>
+                        🔹 PlaySim<br>
+                        🔹 Lazer Play<br>
+                        🔹 Assist Plus<br>
+                        🔹 Fun Play
                     </div>
                 </details>
             </div>
             <div style="text-align: center; margin-top: 50px;" data-reveal>
-                <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button">
-                    TENHO OUTRA DÚVIDA
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Não encontrou sua dúvida?</p>
+                <a href="https://wa.me/5511948113638?text=Olá! Tenho uma dúvida que não está na FAQ. Podem me ajudar?" class="cta-button">
+                    💬 FALAR COM SUPORTE
                 </a>
             </div>
         </div>
@@ -658,24 +990,26 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
 
     <section style="background: var(--gradient-logo); padding: 80px 0; text-align: center;">
         <div class="container">
-            <h2 style="font-size: 3rem; margin-bottom: 20px;">Pronto para transformar sua TV?</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">Junte-se a milhares de clientes satisfeitos e tenha o melhor conteúdo na palma da sua mão.</p>
-            <a href="https://wa.me/5511948113638?text=Olá! Tenho interesse e queria saber mais informações, por favor." class="cta-button" style="background: white; color: var(--color-red); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                COMEÇAR AGORA MESMO
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">🚀 Pronto para transformar sua TV?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9;">Junte-se a milhares de clientes satisfeitos e tenha o melhor conteúdo na palma da sua mão. Sem fidelidade, sem taxas escondidas.</p>
+            <a href="https://wa.me/5511948113638?text=Olá! Quero começar minha assinatura agora!" class="cta-button" style="background: white; color: var(--color-red); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                ⚡ COMEÇAR AGORA MESMO
             </a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <img src="unitvlogotipo.png" alt="UniTV Logo" style="height: 40px; margin-bottom: 20px; opacity: 0.5;">
-            <p>&copy; 2024 UniTV Oficial. Todos os direitos reservados.</p>
-            <p style="font-size: 0.8rem; margin-top: 10px;">Este é um serviço de streaming via internet. Verifique a compatibilidade do seu aparelho.</p>
-            <p class="footer-legal">Razão Social: 48.468.109 WILLAMY ALVES GOMES &nbsp;|&nbsp; CNPJ: 48.468.109/0001-84</p>
+            <img src="unitvlogotipo.png" alt="Super TV Go Logo" style="height: 40px; margin-bottom: 20px; opacity: 0.5;">
+            <p>&copy; 2024 Super TV Go. Todos os direitos reservados.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">Serviço de streaming via internet. Verifique a compatibilidade do seu aparelho antes de contratar.</p>
+            <p class="footer-legal">Razão Social: WILLAMY ALVES GOMES &nbsp;|&nbsp; CNPJ: 48.468.109/0001-84</p>
             <div class="footer-links">
                 <a href="politica-privacidade.html">Política de Privacidade</a>
                 <span class="footer-separator">|</span>
                 <a href="termos-servico.html">Termos de Serviço</a>
+                <span class="footer-separator">|</span>
+                <a href="https://wa.me/5511948113638?text=Olá! Tenho uma dúvida." style="color: var(--color-blue);">Contato</a>
             </div>
         </div>
     </footer>
@@ -710,6 +1044,20 @@ src="https://www.facebook.com/tr?id=4288473641414041&ev=PageView&noscript=1"
                 const xOffset = (x - 0.5) * speed;
                 const yOffset = (y - 0.5) * speed;
                 logo.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });
     </script>
